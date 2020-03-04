@@ -360,12 +360,13 @@ showSyllables=() =>{
 	  }
 	
 	for (let index = 0; index < inputWord.length; index++) {
-		
+		document.getElementById("spellBt").disabled = true;
 		setTimeout(function () { showNextSyllable()
 			changeBackground()
 		}, 0 + (1000 * index));	
+			
 	}
-		
+	setTimeout(function () { document.getElementById("spellBt").disabled = false; }, 0 + (1000 * inputWord.length));
 
 
  }
