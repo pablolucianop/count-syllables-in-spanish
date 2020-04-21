@@ -93,8 +93,8 @@ var cutAWordInSylables = (analizedWord) => {
     if (IsThereLeftToCut) {
       cutAgaing()
     }
-    console.log('cortado')
   }
   cutAgaing()
+
   return splittedWord
 }

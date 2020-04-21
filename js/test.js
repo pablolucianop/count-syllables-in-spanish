@@ -45,7 +45,7 @@ testWordSplitting = (analizedWord, wordSpelledCorrect) => {
     console.log('ok')
     return true
   } else {
-    console.log('error')
+    console.log('error', analizedWord, autoCuttedWord, wordSpelledCorrect)
     return [analizedWord, autoCuttedWord, wordSpelledCorrect]
   }
 }
@@ -64,4 +64,4 @@ var test = (testedValues) => {
   return errorsArray
 }
 
-test(testedValues)
+// test(testedValues)

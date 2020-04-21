@@ -21,7 +21,6 @@ var VowelOrConsonant = (analizedWord) => {
     }
     //if it istn a vowel, its a consonant
     if (isVowel === false) {
-      // console.log('consonante')
       wordProcesed.push('c')
     }
     //if its a vowel, its closed?
@@ -85,7 +84,6 @@ var findDiptongos = (aWSplitted) => {
           diptongosIndex.push(i - 1)
           //finds if there is a vowel after the closed vowel
         } else if (aWSplitted[i + 1] === vowels[e]) {
-          ////console.log('hay diptongo vocal abierta despues,  ', aWSplitted[i-1],aWSplitted[i+1] )
           diptongosIndex.push(i)
         }
       }
@@ -129,10 +127,7 @@ var findDobleLetters = (aWSplitted) => {
     //finds if there a possible doble letter
 
     for (var e = 0; e < possibleDobleLetters.length; e++) {
-      // ////console.log('aWSplitted[i]', aWSplitted[i])
-      // ////console.log('possibleDobleLetters[e]',aWSplitted[e] )
       if (aWSplitted[i] === possibleDobleLetters[e]) {
-        ////console.log('rrr o llll',aWSplitted[i] )
         if (aWSplitted[i] === aWSplitted[i + 1]) {
           dobleLettersIndex.push(i)
         }

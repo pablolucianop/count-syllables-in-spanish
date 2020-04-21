@@ -7,15 +7,33 @@ changeBackground = () => {
   backgroundColorStage = backgroundColorStage + 1
   document.body.style.backgroundColor =
     backgroundColours[backgroundColorStage % 3]
-  // ss
+}
+
+showDiptongos = () => {
+  var input = document.getElementById('userInput').value
+  var IndexToShow = aWanalysis(input).indexOfDiptongos
+  console.log(IndexToShow)
+  IndexToShow.forEach((element, index) => {
+    console.log(input[IndexToShow[index]], input[IndexToShow[index] + 1])
+    document.getElementById(`texto2`).innerHTML =
+      'Hay diptongo en la palabra ' +
+      input +
+      ' : ' +
+      input[IndexToShow[index]] +
+      input[IndexToShow[index] + 1]
+  })
 }
 
 /////HTML integration
 showSyllables = () => {
+  showDiptongos()
   var input = document.getElementById('userInput').value
   var inputWord = cutAWordInSylables(input)
+
+  console.log('indexOfHiatos ', aWanalysis(input).indexOfHiatos)
+
+  console.log('indexO indivisibles', aWanalysis(input).indexOfunsplittables)
   var presentedWord = []
-  console.log(presentedWord)
   showNextSyllable = () => {
     presentedWord.push(inputWord[presentedWord.length])
     document.getElementById('texto').innerHTML = presentedWord.join(' - ')
