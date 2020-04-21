@@ -64,4 +64,4 @@ var test = (testedValues) => {
   return errorsArray
 }
 
-// test(testedValues)
+test(testedValues)

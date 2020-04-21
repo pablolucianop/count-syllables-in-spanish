@@ -12,21 +12,41 @@ changeBackground = () => {
 showDiptongos = () => {
   var input = document.getElementById('userInput').value
   var IndexToShow = aWanalysis(input).indexOfDiptongos
-  console.log(IndexToShow)
+  var divDiptongo = document.getElementById('textoDiptongo')
+  // var divDiptongo = document.getElementyById()
   IndexToShow.forEach((element, index) => {
-    console.log(input[IndexToShow[index]], input[IndexToShow[index] + 1])
-    document.getElementById(`texto2`).innerHTML =
+    var div = document.createElement('div')
+    div.textContent =
       'Hay diptongo en la palabra ' +
       input +
       ' : ' +
       input[IndexToShow[index]] +
       input[IndexToShow[index] + 1]
+    div.setAttribute('class', 'note')
+    divDiptongo.appendChild(div)
   })
 }
-
+showHiatos = () => {
+  var input = document.getElementById('userInput').value
+  var IndexToShow = aWanalysis(input).indexOfHiatos
+  var divDiptongo = document.getElementById('textoHiato')
+  // var divDiptongo = document.getElementyById()
+  IndexToShow.forEach((element, index) => {
+    var div = document.createElement('div')
+    div.textContent =
+      'Hay hiato en la palabra ' +
+      input +
+      ' : ' +
+      input[IndexToShow[index]] +
+      input[IndexToShow[index] + 1]
+    div.setAttribute('class', 'note')
+    divDiptongo.appendChild(div)
+  })
+}
 /////HTML integration
 showSyllables = () => {
   showDiptongos()
+  showHiatos()
   var input = document.getElementById('userInput').value
   var inputWord = cutAWordInSylables(input)
 

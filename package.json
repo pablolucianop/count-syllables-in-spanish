@@ -20,6 +20,7 @@
     "eslint": "^6.8.0"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "reload": "^3.0.4"
   }
 }
