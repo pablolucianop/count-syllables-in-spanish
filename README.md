@@ -9,3 +9,7 @@ Count syllables of any word in Spanish, displayed in a learning friendly way. It
 ## Author
 
 - **Pablo Panza** - [pablolucianop](https://github.com/pablolucianop), https://pablopanzatrabajos.com.ar/
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
