@@ -27,9 +27,11 @@ var cutASyllable = (analizedWord) => {
     cutFirstSyllableHere(firstHiatoIndex + 1)
     //else if its there a diptongo, cut the syllable one before the third vowel
   } else if (firstVowelIndex === firstDiptongoIndex) {
+    //it theres a diptongo an then repeated letters, cut after them
     if (firstVowelIndex + 2 === firstRepeatedLetterIndex) {
       cutFirstSyllableHere(thirdVowelIndex - 2)
     } else {
+      //if not, cut one letter after the third vowel
       cutFirstSyllableHere(thirdVowelIndex - 1)
     }
     //else if, there is a repeated letter, cut the syllable two letter before the second vowel
