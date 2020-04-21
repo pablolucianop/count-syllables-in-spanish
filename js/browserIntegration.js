@@ -46,8 +46,8 @@ showHiatos = () => {
 
 /////HTML integration
 showSyllables = () => {
-  showDiptongos()
-  showHiatos()
+  // showDiptongos()
+  // showHiatos()
   var input = document.getElementById('userInput').value
   var inputWord = cutAWordInSylables(input)
 
