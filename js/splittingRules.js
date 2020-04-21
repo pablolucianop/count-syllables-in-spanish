@@ -32,7 +32,6 @@ var cutASyllable = (analizedWord) => {
     } else {
       cutFirstSyllableHere(thirdVowelIndex - 1)
     }
-
     //else if, there is a repeated letter, cut the syllable two letter before the second vowel
   } else if (secondVowelIndex - 2 === firstRepeatedLetterIndex) {
     cutFirstSyllableHere(secondVowelIndex - 2)

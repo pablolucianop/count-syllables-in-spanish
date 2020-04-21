@@ -43,6 +43,7 @@ showHiatos = () => {
     divDiptongo.appendChild(div)
   })
 }
+
 /////HTML integration
 showSyllables = () => {
   showDiptongos()
