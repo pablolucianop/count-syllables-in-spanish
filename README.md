@@ -8,7 +8,8 @@ Count syllables of any word in Spanish, displayed in a learning friendly way. It
 
 ## Author
 
-- **Pablo Panza** - [pablolucianop](https://github.com/pablolucianop), https://pablopanzatrabajos.com.ar/
+- **Pablo Panza**
+<!--   - [pablolucianop](https://github.com/pablolucianop), https://pablopanzatrabajos.com.ar/ -->
 
 ## License
 
